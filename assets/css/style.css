@@ -1,0 +1,230 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body {
+    background: url('https://images.unsplash.com/photo-1585336261022-680e295ce3fe?auto=format&fit=crop&q=80') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1d1d1f;
+}
+
+.container {
+    max-width: 980px;
+    padding: 0 22px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+    color: #1d1d1f;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.review-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 8px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #424245;
+    margin-bottom: 16px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reviewer-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #86868b;
+}
+
+.review-rating {
+    font-size: 16px;
+    color: #0066CC;
+}
+
+.card-header {
+    background: transparent;
+    border: none;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.card-header p {
+    color: #6e6e73;
+}
+
+.form-label {
+    color: #1d1d1f;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #1d1d1f;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: #ffffff;
+    border-color: #0066CC;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.2);
+    color: #1d1d1f;
+}
+
+.form-control::placeholder {
+    color: #86868b;
+}
+
+.btn-primary {
+    background: #0066CC;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #0077ED;
+    transform: translateY(-1px);
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input:checked~label {
+    color: #0066CC;
+}
+
+.alert {
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.alert-success {
+    color: #1d1d1f;
+    border-left: 4px solid #00B06B;
+}
+
+.alert-danger {
+    color: #1d1d1f;
+    border-left: 4px solid #FF3B30;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+    overflow: visible;
+    padding: 30px;
+}
+
+.swiper-slide {
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+    opacity: 0.5;
+}
+
+.swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.swiper-slide .card {
+    margin: 0;
+    height: 100%;
+    min-height: 300px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.swiper-slide-active .card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    background: #0066CC;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #0066CC;
+}
