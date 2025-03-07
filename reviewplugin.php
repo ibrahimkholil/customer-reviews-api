@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Customer Reviews API
- * Plugin URI: https://github.com/your-repo/customer-reviews-api
+ * Plugin URI: https://github.com/ibrahimkholil/customer-reviews-api
  * Description: A WordPress plugin to fetch and submit customer reviews via an external API with reCAPTCHA protection.
  * Version: 1.0.0
  * Author: Ibrahim khalil (WP Expert)
@@ -54,17 +54,17 @@ class Customer_Reviews_API {
         $options = get_option($this->option_name, []);
         ?>
         <div class="wrap">
-            <h2><?php _e('Customer Reviews API Settings', 'customer-reviews-api'); ?></h2>
+            <h2><?php esc_html_e('Customer Reviews API Settings', 'customer-reviews-api'); ?></h2>
             <form method="post" action="options.php">
                 <?php settings_fields('customer_reviews_api_group'); ?>
                 <table class="form-table">
                     <tr>
-                        <th scope="row"><label for="api_key"><?php _e('API Key', 'customer-reviews-api'); ?></label></th>
-                        <td><input type="text" name="<?php echo $this->option_name; ?>[api_key]" value="<?php echo esc_attr($options['api_key'] ?? ''); ?>" class="regular-text"></td>
+                        <th scope="row"><label for="api_key"><?php esc_html_e('API Key', 'customer-reviews-api'); ?></label></th>
+                        <td><input type="text" name="<?php echo esc_attr($this->option_name); ?>[api_key]" value="<?php echo esc_attr($options['api_key'] ?? ''); ?>" class="regular-text"></td>
                     </tr>
                     <tr>
-                        <th scope="row"><label for="recaptcha_site_key"><?php _e('reCAPTCHA Site Key', 'customer-reviews-api'); ?></label></th>
-                        <td><input type="text" name="<?php echo $this->option_name; ?>[recaptcha_site_key]" value="<?php echo esc_attr($options['recaptcha_site_key'] ?? ''); ?>" class="regular-text"></td>
+                        <th scope="row"><label for="recaptcha_site_key"><?php esc_html_e('reCAPTCHA Site Key', 'customer-reviews-api'); ?></label></th>
+                        <td><input type="text" name="<?php echo esc_attr($this->option_name); ?>[recaptcha_site_key]" value="<?php echo esc_attr($options['recaptcha_site_key'] ?? ''); ?>" class="regular-text"></td>
                     </tr>
                 </table>
                 <?php submit_button(); ?>

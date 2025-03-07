@@ -1,4 +1,4 @@
-# Customer Reviews API - WordPress Plugin
+# Customer Reviews API
 
 ## 📌 Overview
 The **Customer Reviews API** plugin allows users to **fetch, display, and submit customer reviews** via an external API. It integrates **Google reCAPTCHA**, supports **AJAX-based form submissions**, and follows **WordPress best practices**.
