@@ -68,5 +68,5 @@ This plugin is open-source and released under the **MIT License**.
 - If you find this plugin useful, give it a ⭐ star!
 
 ## 📞 Support
-For support or customization, contact: `your-email@example.com`
+For support or customization, contact: `https://www.linkedin.com/in/ik-mashud/`
 
